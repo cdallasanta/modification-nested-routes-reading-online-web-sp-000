@@ -3880,3 +3880,14 @@ Processing by AuthorsController#index as HTML
 Completed 200 OK in 657ms (Views: 650.9ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/authors/4" for 76.121.63.6 at 2019-05-30 17:28:12 +0000
+Cannot render console from 76.121.63.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAuthor Load (0.6ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering authors/show.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."author_id" = ?[0m  [["author_id", 4]]
+  Rendered authors/show.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 62ms (Views: 58.1ms | ActiveRecord: 1.3ms)
+
+

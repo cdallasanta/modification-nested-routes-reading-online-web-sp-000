@@ -1,5 +1,5 @@
 module PostsHelper
-  def author_select
+  def author_id_field(post)
     if @post.author.nil?
       f.select :author_id, options_from_collection_for_select(Author.all, :id, :name)
     else

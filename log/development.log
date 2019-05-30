@@ -4135,3 +4135,17 @@ Processing by PostsController#show as HTML
   [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."author_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["author_id", 4], ["id", 23], ["LIMIT", 1]]
   Rendering posts/show.html.erb within layouts/application
   Rendered posts/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 234ms (Views: 214.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/authors/4/posts/23/edit" for 76.121.63.6 at 2019-05-30 17:48:00 +0000
+Cannot render console from 76.121.63.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#edit as HTML
+  Parameters: {"author_id"=>"4", "id"=>"23"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (12.6ms)
+  Rendered posts/edit.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.2ms)
+
+

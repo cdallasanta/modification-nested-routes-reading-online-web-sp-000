@@ -23,7 +23,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     @post.save
-    redirect_to artist_post_path(@post.author, @post)
+    redirect_to author_post_path(@post.author, @post)
   end
 
   def update
